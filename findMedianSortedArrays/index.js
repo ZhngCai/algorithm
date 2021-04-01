@@ -45,4 +45,3 @@ var findMedianSortedArrays = function (nums1, nums2) {
 let nums1 = [3, 3],
   nums2 = [3, 3];
 findMedianSortedArrays(nums1, nums2)
-console.log("findMedianSortedArrays>>>", findMedianSortedArrays(nums1, nums2), nums1, nums2)
