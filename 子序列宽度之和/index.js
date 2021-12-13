@@ -44,3 +44,18 @@
     }
     return sum;
 };
+
+
+
+
+var sumSubseqWidths = function(nums) {
+    let sum=0,leg = nums.length;
+    const mod = 1000000007;
+    nums.sort((a,b)=>a - b);
+
+
+    for(let i = 0;i<leg;i++){
+        sum += nums[i]*(Math.pow(2,i)- Math.pow(2,leg-i-1));
+    }
+    return sum%mod;
+};
